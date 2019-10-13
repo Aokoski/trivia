@@ -1,2 +1,0 @@
-# trivia
-javascript trivia quiz
