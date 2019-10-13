@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body id="fx-respond">
+    <div id="container">
+      <div id="content" class="fx-tiles">
+        <!-- FULL WIDTH LAYOUT -->
+        <div class="fx-grid fx-cf">
+          <div class="fx-col">
+            <!-- ADD BLOCK(S) HERE -->
+            <!-- START: SHARE BLOCK -->
+            <div class="fx-block fx-purple fx-share fx-align-left fx-cf purple-bg" style="padding:20px ">
+              <div class="fx-copy" style="padding-left:20px; padding-bottom:0">
+                <h2>knowledge is power</h2>
+                <p>test yourself before you wreck yo self </p>
+                <p><a href="#game" id="start-button" class="fx-btn">Play meow</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- FULL WIDTH LAYOUT -->
+          <div class="fx-grid fx-cf">
+            <div class="fx-col">
+              <!-- ADD BLOCK(S) HERE -->
+              <div class="fx-block game-container">
+                <div id="game">
+                  <div class="game-grid">
+                    <p id="timer" class="timer">
+                      1:00:00
+                    </p>
+                    <div class="game-left-col">
+                      <div class="gauge-container" style="background: #ffffff url('images/icon-01.svg') no-repeat center center; background-size: 100px 100px;">
+                        <canvas id="gauge" class="gauge" width="240" height="240"></canvas>
+                        <div class="score-number">0</div>
+                      </div>
+                    </div>
+                    <div class="game-right-col">
+                      <div class="questions">
+                        <div class="question">
+                          <p><span class="number">1 </span><span class="questionText">All Calico cats are:</span></p>
+                          <div class="answers">
+                            <label><input type="checkbox" class="answer" data-correct="false"><span class="text">A. cats</span></label>
+                            <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B. female</span></label>
+                            <label><input type="checkbox" class="answer" data-correct="true"><span class="text">C. Both of the above</span></label>
+                          </div>
+                        </div>
+                        <div class="question">
+                          <p><span class="number">2 </span><span class="questionText">Black cats are:</span></p>
+                          <div class="answers">
+                            <label><input type="checkbox" class="answer" data-correct="false"><span class="text">A. cats</span></label>
+                            <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B. black</span></label>
+                            <label><input type="checkbox" class="answer" data-correct="true"><span class="text">C. Both of the above</span></label>
+                          </div>
+                        </div>
+                        <div class="question">
+                          <p><span class="number">3 </span><span class="questionText">cats exist 
+                          </span></p>
+                          <div class="answers">
+                           <label><input type="checkbox" class="answer" data-correct="true"><span class="text">A. True</span></label>
+                            <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B.  False</span></label>
+                          </div>
+                        </div>
+                        <div class="question">
+                          <p><span class="number">4 </span><span class="questionText">how does a cat purr</span></p>
+                          <div class="answers">
+                            <label><input type="checkbox" class="answer" data-correct="false"><span class="text">A. they don't</span></label>
+                            <label><input type="checkbox" class="answer" data-correct="true"><span class="text">B. There is currently no scientific explanation</span></label>
+                            <label><input type="checkbox" class="answer" data-correct="false"><span class="text">C.  magic </span></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="game-end-times-up">
+                        <p id="time-out-text" class="game-end-text"></p>
+                        <a href="./challenge-page.html" class="fx-btn">Play again</a>
+  
+                      </div>
+                      <div id="game-end">
+                        <p id="game-end-text" class="game-end-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="progress-bar" class="progress-bar">
+                    <div class="indicator current"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>  
+  
+      </div>
+    </div>
+   
+    
+    <script type="text/javascript" src="test.js"></script>
+</body>
+</html>
